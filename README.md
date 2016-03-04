@@ -174,7 +174,70 @@ Comience por [01. Resumen Ejecutivo](./01_Resumen_Ejecutivo.md), continúe con [
 
 ---
 
-## Contacto
+## 🤝 Colaboración y Contribuciones
+
+ALMA es un proyecto de **investigación propietaria** con acceso restringido. Sin embargo, valoramos la colaboración con la comunidad científica y profesional:
+
+### Formas de Colaborar
+
+**Para Investigadores Académicos:**
+- Propuestas de colaboración en investigación fundamental
+- Acceso preferencial para proyectos publicables
+- Citación en papers académicos (ver sección de Referencias)
+
+**Para Empresas y Startups:**
+- Programa de early access para validación en casos de uso reales
+- Feedback sobre capacidades y limitaciones del sistema
+- Casos de estudio documentados para investigación
+
+**Para la Comunidad:**
+- Reportar errores en la documentación
+- Sugerir casos de uso no considerados
+- Proponer mejoras en el roadmap público
+
+### Proceso de Colaboración
+
+1. **Contacto inicial:** Envía un email a [email protected] describiendo tu interés
+2. **Evaluación:** Revisaremos tu propuesta en máximo 7 días
+3. **NDA (si aplica):** Para acceso a detalles técnicos específicos
+4. **Colaboración:** Acceso, recursos y timeline según el tipo de proyecto
+
+**Nota:** Este proyecto NO acepta pull requests públicos ya que la implementación es propietaria. La documentación es de acceso público bajo términos restrictivos (ver LICENSE).
+
+---
+
+## 📜 Licencia
+
+Este proyecto está protegido bajo **Copyright Propietario**.
+
+- ✅ **Permitido:** Leer documentación, citar con atribución, usar para investigación académica
+- ❌ **NO Permitido:** Reproducir, distribuir, implementar o comercializar sin autorización
+
+Ver [LICENSE](LICENSE) para términos completos.
+
+**Para licenciamiento comercial o académico:** Contactar a [email protected]
+
+---
+
+## 👨‍💻 Autor
+
+**Jose Alexis Correa Valencia**
+*Systems Engineer · Software Architect · AI Researcher*
+
+- **GitHub:** [@jalexiscv](https://github.com/jalexiscv)
+- **Email:** [email protected]
+- **Ubicación:** Buga, Valle del Cauca, Colombia
+- **Proyecto Paralelo:** [HUMØRN Neuromorphic Chip](https://github.com/jalexiscv)
+
+**Especialidades:**
+- Arquitecturas neuromórficas
+- Sistemas de memoria persistente
+- Meta-aprendizaje y Neural Architecture Search
+- Infraestructura de alto rendimiento para ML
+
+---
+
+## 📞 Contacto y Acceso
 
 **Jose Alexis Correa Valencia**
 Investigador Principal · Diseñador de Arquitectura
@@ -182,7 +245,62 @@ Investigador Principal · Diseñador de Arquitectura
 **Email:** [email protected]
 **Ubicación:** Buga, Valle del Cauca, Colombia
 
-**Acceso:** ALMA está actualmente disponible solo por invitación para instituciones académicas, empresas enterprise y fondos de inversión.
+### Acceso a ALMA
+
+ALMA está actualmente disponible **solo por invitación** para:
+
+- 🏛️ **Instituciones académicas** con proyectos de investigación en ML/AI
+- 🏢 **Empresas enterprise** que requieren modelos especializados
+- 💰 **Fondos de inversión** interesados en oportunidades estratégicas
+- 🔬 **Laboratorios de investigación** en sectores críticos (salud, seguridad, etc.)
+
+**Proceso de solicitud:**
+1. Enviar email con descripción de caso de uso
+2. Evaluación en 7 días hábiles
+3. Firma de NDA (si aplica)
+4. Acceso y onboarding
+
+---
+
+## ❤️ Apoyo al Proyecto
+
+Si ALMA ha sido valioso para tu investigación, organización o te interesa apoyar el desarrollo de tecnologías democratizadoras de IA, considera apoyar este proyecto:
+
+### Formas de Apoyo
+
+**Colaboración Académica:**
+- Citar ALMA en publicaciones académicas
+- Co-autoría en papers derivados de uso de ALMA
+- Validación de benchmarks en datasets públicos
+
+**Apoyo Institucional:**
+- Grants de investigación para desarrollo de componentes open source
+- Infraestructura de cómputo para experimentación
+- Datasets curados para entrenamiento
+
+**Apoyo Financiero:**
+
+| Método | Detalles |
+|--------|----------|
+| **PayPal** | [jalexiscv@gmail.com](https://www.paypal.com/paypalme/anssible) |
+| **Nequi (Colombia)** | `3117977281` |
+| **Transferencia Bancaria** | Solicitar información por email |
+
+**Inversión Estratégica:**
+Para discutir oportunidades de inversión en el proyecto ALMA (Series Seed, A, B), contactar directamente a [email protected]
+
+*¡Tu apoyo acelera la democratización de la IA a nivel global!*
+
+---
+
+## 🙏 Agradecimientos
+
+Agradecimientos especiales a:
+
+- La comunidad académica de ML/AI por el conocimiento compartido en papers y código abierto
+- Early adopters que validaron ALMA en casos de uso reales
+- Colaboradores que proporcionaron feedback crítico durante desarrollo
+- Instituciones que apoyaron con infraestructura y datasets
 
 ---
 
