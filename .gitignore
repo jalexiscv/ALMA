@@ -68,9 +68,3 @@ __pycache__/
 *.tar.gz
 *.rar
 *.7z
-
-# Herramientas internas (no publicar)
-change_dates.py
-CHANGE_DATES_README.md
-.gitignore
-
