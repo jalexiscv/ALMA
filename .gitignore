@@ -72,3 +72,5 @@ __pycache__/
 # Herramientas internas (no publicar)
 change_dates.py
 CHANGE_DATES_README.md
+.gitignore
+
