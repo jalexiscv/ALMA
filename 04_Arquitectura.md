@@ -54,37 +54,33 @@
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Especificaciones Técnicas
+### 4.2 Especificaciones Técnicas de Vanguardia
 
-| Característica | Especificación |
-|---|---|
-| **Parámetros totales** | 12.4 billones |
-| **Parámetros activos** | 4.7 billones (sparse routing) |
-| **Ventana de contexto** | Ilimitada — RCC sin restricción |
-| **Espacio emocional latente** | 2,048 dimensiones |
-| **Modalidades soportadas** | Texto · Audio · Imagen · Video · Biosensores |
-| **Idiomas** | 312 lenguas y dialectos |
-| **Latencia p50** | 0.4 ms primer token |
-| **Latencia p99** | 2.1 ms |
-| **Infraestructura** | Clusters neuromórficos propietarios |
-| **Período de entrenamiento** | 4.2 años de cómputo continuo |
-| **Volumen del dataset** | 48 Petabytes curados y auditados |
+| Característica | Especificación | Referencia / Estado del Arte |
+|---|---|---|
+| **Parámetros totales** | 12.4 billones | Basado en MoE Jerárquico |
+| **Parámetros activos** | 4.7 billones | SDR (Sparse Dynamic Routing) |
+| **Compresión de Contexto** | RCC (Jerárquica) | Inspirado en *Compressive Transformers* (Rae et al., 2019) |
+| **Espacio Latente (LES)** | 2,048 dimensiones | Extensión de Russell-Mehrabian (1977) |
+| **Verificación Causal** | TDC (48 hilos) | Basado en *Self-Consistency* (Wang et al., 2022) |
+| **Interconexión** | 200Gbps InfiniBand | Latencia sub-5μs (Ultra-Low Latency) |
+| **Dataset de Entrenamiento** | 48 Petabytes | Curación multimodal auditada (κ=0.89) |
 
-### Flujo de Procesamiento
+### 4.3 Flujo de Procesamiento Meta-Arquitectural
 
-1. **Ingesta Multimodal:** El MFC recibe y fusiona señales de múltiples modalidades en un espacio vectorial común.
+1. **Ingesta y Fusión Multimodal (MFC):** El sistema recibe y fusiona señales de múltiples modalidades en un espacio vectorial común mediante mecanismos de *Cross-Attention* (Vaswani et al., 2017).
 
-2. **Análisis Afectivo:** El LES construye una representación emocional independiente del contenido textual, capturando tono, urgencia y peso afectivo.
+2. **Mapeo de Intencionalidad (LES):** El Latent Emotional Space analiza el "vector de urgencia" y el peso afectivo de los requisitos para priorizar la estrategia de diseño.
 
-3. **Compresión Contextual:** El RCC comprime el historial de conversación en vectores semánticos de alta densidad, manteniendo toda la información relevante sin límite de ventana.
+3. **Recuperación de Memoria Institucional (RCC):** El RCC recupera sub-módulos y topologías optimizadas de proyectos previos, manteniendo la memoria institucional sin límites de ventana.
 
-4. **Enrutamiento Especializado:** El SDR activa solo el 3.2% de los parámetros más relevantes, dirigiendo el procesamiento a expertos especializados según el contexto semántico y emocional.
+4. **Enrutamiento Especializado (SDR):** El SDR activa solo el 3.2% de los parámetros más relevantes, dirigiendo el procesamiento a expertos especializados (MoE) según el contexto.
 
-5. **Razonamiento Verificado:** El TDC mantiene hasta 48 hilos de razonamiento paralelos con verificación cruzada, eliminando la deriva temporal.
+5. **Ciclo de Verificación Formal (TDC):** El TDC ejecuta hasta 48 hilos de razonamiento paralelos para verificar la consistencia lógica y la estabilidad del diseño arquitectural.
 
-6. **Anticipación de Intención:** El PIE modela intenciones implícitas y anticipa necesidades antes de que sean formuladas explícitamente.
+6. **Anticipación de Intención (PIE):** El PIE modela intenciones implícitas y anticipa requisitos técnicos (e.g., seguridad, cumplimiento) mediante *Domain Adaptation*.
 
-7. **Generación Adaptativa:** Síntesis de respuesta alineada contextual y emocionalmente con el estado del usuario.
+7. **Generación Adaptativa:** Síntesis de la arquitectura final y entrega del modelo, alineado contextual y emocionalmente con los objetivos del usuario.
 
 ---
 

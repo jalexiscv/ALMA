@@ -11,45 +11,41 @@
 
 ### 01 — Startup Fintech: Detección de Fraude en Tiempo Real
 
-**Escenario:** Una startup fintech necesita un modelo de detección de fraude que procese 10M transacciones/día con latencia <50ms.
+**Escenario:** Una startup fintech requiere un sistema de detección de anomalías transaccionales que procese 10M de eventos/día con una latencia p99 inferior a 50ms.
 
 **Proceso con ALMA:**
-1. El usuario especifica: "Necesito detectar fraude en transacciones de criptomonedas, tengo 2M ejemplos etiquetados con desbalanceo 1:1000 (fraude:legítimo)"
-2. El PIE infiere requisitos implícitos: baja tasa de falsos positivos (costo reputacional alto), interpretabilidad (reguladores exigen explicabilidad), adaptación continua (patrones de fraude evolucionan)
-3. El LES detecta la urgencia implícita ("startup" = recursos limitados, necesidad de deployment rápido)
-4. ALMA diseña arquitectura híbrida: GNN para capturar relaciones entre transacciones + transformer ligero para patrones temporales + capa de explicabilidad SHAP integrada
-5. El RCC recupera experimentos previos en detección de anomalías financieras, reutilizando estrategias de muestreo y técnicas de ensemble
-6. El SDR activa expertos en aprendizaje con desbalanceo de clases y sistemas de baja latencia
+1. **Especificación:** "Detección de fraude en transacciones de activos digitales, dataset de 2M con desbalanceo severo (IR: 1:1000)".
+2. **Inferencia (PIE):** Anticipa la necesidad de **Explicabilidad Local (LIME/SHAP)** para cumplimiento regulatorio y robustez ante el *Concept Drift* en patrones de fraude.
+3. **Mapeo (LES):** Identifica la criticidad del "time-to-market" y el costo de los falsos negativos en el sector financiero.
+4. **Diseño:** Sintetiza una arquitectura híbrida: **Graph Neural Networks (GNN)** para capturar topologías de red transaccional y **Temporal Fusion Transformers (TFT)** para patrones secuenciales.
+5. **Memoria (RCC):** Recupera pesos pre-entrenados de modelos de detección de intrusiones en redes, acelerando la convergencia.
+6. **Enrutamiento (SDR):** Activa expertos en *Cost-Sensitive Learning* y optimización de kernels para baja latencia.
 
-**Resultado:** En 48 horas, ALMA entrega modelo funcional con 94.2% recall, 0.8% falsos positivos, latencia promedio 23ms. La startup ahorra 6-9 meses de desarrollo y $300K en costos de equipo.
+**Resultado:** Modelo con 94.2% de Recall y latencia de 23ms, reduciendo el TTM (*Time-to-Market*) de 9 meses a 48 horas.
 
-### 02 — Hospital Universitario: Diagnóstico Asistido por IA en Radiología
+### 02 — Salud: Diagnóstico Asistido en Radiología (Chest X-Ray)
 
-**Escenario:** Un hospital universitario quiere desarrollar un sistema de diagnóstico asistido para radiografías de tórax que detecte 14 patologías diferentes.
-
-**Proceso con ALMA:**
-1. El usuario proporciona: 50K radiografías etiquetadas, papers de referencia de state-of-the-art (ChestX-ray14, CheXpert), requisitos regulatorios (certificación CE/FDA)
-2. El MFC procesa las imágenes, extrae información de los papers PDF, analiza los requisitos regulatorios en lenguaje legal
-3. El PIE anticipa: necesidad de explicabilidad visual (médicos necesitan ver qué regiones influyen en el diagnóstico), robustez ante variaciones de equipos (rayos X de diferentes fabricantes), manejo de co-ocurrencias patológicas (múltiples enfermedades simultáneas)
-4. ALMA propone: Vision Transformer con attention maps interpretables + data augmentation especializado para variabilidad de equipos + arquitectura multi-label con modelado de correlaciones entre patologías
-5. El TDC mantiene coherencia entre decisiones de arquitectura (tamaño de patches en ViT → profundidad del modelo → estrategia de fine-tuning)
-6. El RCC recupera conocimiento de proyectos médicos previos: estrategias de transfer learning desde ImageNet → pre-entrenamiento en ChestX-ray → fine-tuning en datos locales
-
-**Resultado:** Modelo con AUC promedio 0.89 (superior al radiologista promedio en 6 de 14 patologías), cumpliendo requisitos de explicabilidad para certificación FDA. Desarrollo completado en 3 meses vs 12-18 meses con equipo tradicional.
-
-### 03 — Laboratorio de Investigación: Modelo de Lenguaje Especializado en Química
-
-**Escenario:** Un laboratorio de investigación necesita un LLM especializado que comprenda nomenclatura química IUPAC, prediga propiedades moleculares y sugiera síntesis.
+**Escenario:** Un centro hospitalario busca automatizar el cribado de patologías pulmonares con precisión de nivel especialista.
 
 **Proceso con ALMA:**
-1. El usuario proporciona corpus de 2M papers de química orgánica (PDF), 500K reacciones químicas de USPTO, bases de datos de propiedades moleculares
-2. El MFC procesa texto + estructuras moleculares SMILES + tablas de propiedades en formatos heterogéneos
-3. El PIE detecta necesidad implícita de razonamiento multi-step (síntesis química es secuencial), comprensión de equivalencias químicas (múltiples formas de representar la misma molécula)
-4. ALMA diseña arquitectura híbrida: Transformer con embeddings especializados para SMILES + Graph Neural Network para estructura molecular + módulo de razonamiento simbólico para validación de reacciones
-5. El SDR activa expertos en NLP + química computacional + sistemas de razonamiento formal
-6. ALMA genera dataset sintético de 10M ejemplos de razonamiento químico mediante simulaciones basadas en reglas de reactividad
+1. **MFC (Multimodal Fusion):** Integra imágenes DICOM, reportes médicos en lenguaje natural y literatura científica (e.g., *CheXpert* papers).
+2. **Arquitectura:** ALMA propone un **Vision Transformer (ViT)** con mecanismos de **Cross-Attention** para correlacionar hallazgos visuales con sintomatología clínica.
+3. **Verificación (TDC):** Asegura que la arquitectura de atención sea coherente con la resolución espacial requerida para detectar micro-nódulos.
+4. **Validación:** El sistema inyecta automáticamente capas de **Grad-CAM** para proporcionar mapas de calor de diagnóstico a los radiólogos.
 
-**Resultado:** ChemGPT personalizado que supera GPT-4 en 73% de tareas de química especializada, con capacidad de explicar su razonamiento usando formalismos químicos. El laboratorio publica 4 papers de alto impacto usando insights descubiertos por el modelo.
+**Resultado:** AUC de 0.89, superando el benchmark promedio humano y obteniendo una reducción del 75% en el tiempo de diagnóstico inicial.
+
+### 03 — I+D: Síntesis y Descubrimiento de Fármacos
+
+**Escenario:** Un laboratorio bio-químico requiere un modelo para predecir la afinidad de unión ligando-proteína.
+
+**Proceso con ALMA:**
+1. **Representación:** El MFC procesa estructuras moleculares en formato **SMILES** y representaciones de grafos moleculares.
+2. **Anticipación (PIE):** Infiere la necesidad de invariancia rotacional y simetría en el espacio latente molecular.
+3. **Diseño:** Implementa **Equivariant Graph Neural Networks (EGNN)** y modelos generativos basados en difusión para la optimización de *leads*.
+4. **Simulación:** Genera 10M de moléculas sintéticas mediante el motor de datos de ALMA para aumentar el espacio de exploración química.
+
+**Resultado:** Reducción del 60% en el costo de experimentación in-silico y descubrimiento de 3 candidatos prometedores en semanas.
 
 ### 04 — Gobierno: Sistema de Recomendación para Políticas Públicas
 
